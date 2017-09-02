@@ -1,0 +1,26 @@
+counter = 0
+
+x = 4321
+    
+while counter != 7: # != (not equal to)
+
+    string_form = str(x)	#converts x value to string
+
+    list_form = (list(string_form))	#converts string to list
+        
+    acsending = sorted(list_form, key=int)
+        
+    decsending = sorted(list_form, key=int, reverse=True)
+        
+    decsending = int(''.join(decsending))
+        
+    acsending = int(''.join(acsending))
+        
+    subtraction = decsending - acsending
+        
+    counter += 1
+        
+    x = subtraction
+        
+    print(subtraction)
+        
